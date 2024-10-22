@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <title>Another Notes App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Notes</h1>
+        <div class="row">
+            <div class="column">
+                <form id="new-note">
+                    <div class="note-title-container">
+                        <label for="new-note-title">Enter Note Title</label>
+                        <input type="text" id="new-note-title">
+                    </div>
+                    <div class="note-container">
+                        <textarea id="new-note-text" spellcheck="false" placeholder="Make a note"
+                            class="nt-maker"></textarea>
+                    </div>
+                    <button type="submit">Save Note</button>
+                </form>
+            </div>
+            <div class="column">
+                <h2>Saved Notes:</h2>
+                <ul id="notes">
+                </ul>
+                <div id="show-note">
+                    <p>Note Title: <span class="note-title"></span></p>
+                    <textarea class="note-text" disabled></textarea>
+                    <div class="row1">
+                        <div class="column1">
+                            <div id="buttons">
+                            </div>
+                        </div>
+                        <div class="column1">
+                            <div id="buttonsEdit">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
